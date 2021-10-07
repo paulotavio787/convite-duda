@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    display: flex;
+    min-width: 98.5vw;
+    min-height: 100vh;
+}
+
+body{
+    background-color: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 193px;
+    background-color: #494949;
+    border-radius: 0 0 50px 50px;
+}
+
+#title {
+    margin-top: 10px;
+    font-size: 3em;
+    color: #D98DDE;
+    font-family: 'Pacifico', cursive;
+}
+
+#navBox {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#homeBtn{
+    width: 30%;
+    height: 37px;
+    border: 0;
+    border-radius: 100px;
+    margin-right: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+    color: #3b3b3b;
+}
+
+#lcBtn {
+    width: 30%;
+    height: 37px;
+    border: 0;
+    border-radius: 100px;
+    margin-left: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+    color: #3b3b3b;
+}
+
+#conviteInfo {
+    width: 668;
+    height: 668;
+}
+
+#lcBtn:hover, #homeBtn:hover {
+    transition: .2s;
+    opacity: 80%;
+}
+
+#formTitle {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+#nameIpt {
+    width: 60%;
+    height: 50px;
+    padding-left: 30px;
+    outline: 0;
+    color: #575757;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 0;
+    border-radius: 100px 0 0 100px;
+    margin-bottom: 50px;
+    margin-right: 14px;
+    margin-left: 10px;
+}
+
+#nameSend {
+    width: 69px;
+    height: 50px;
+    background-color: #D98DDE;
+    color: #2C2C2C;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0 100px 100px 0;
+
+}
+
+#nameSend:hover{
+    opacity: 80%;
+}
+
+#listBox {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D98DDE;
+    width: 90%;
+    max-width: 544px;
+    min-height: 300px;
+    margin-top: 21px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+    color: #2C2C2C;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 60px;
+    list-style: none;
+}
+
+li::marker{
+    color: #D98DDE;
+}
+
+#gif {
+    width: 84px;
+    height: 70px;
+    margin-bottom: 60px;
+}
+
+#conviteInfo {
+    width: 50%;
+    min-width: 350px;
+}
