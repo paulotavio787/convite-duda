@@ -14,9 +14,13 @@ const nameIpt = document.querySelector("#nameIpt")
 const sendBtn = document.querySelector("#nameSend")
 
 sendBtn.onclick = send = async () => {
-    const data = {
-        convidado: nameIpt.value
+    if (nameIpt.value != "") {
+        const data = {
+            convidado: nameIpt.value
+        }
+        axios.post("https://convite-duda.herokuapp.com/listas", data)
+        nameIpt.value = ""
+    } else {
+        alert("Insira seu nome por favor")
     }
-    axios.post("https://convite-duda.herokuapp.com/listas", data)
-    nameIpt.value = ""
 }
